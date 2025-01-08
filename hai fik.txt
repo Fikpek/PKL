@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Ayo belajar java script
+=======
+Arya Davinci
+>>>>>>> d80d7625b807dcea1558f56b99d07b73887553a8
