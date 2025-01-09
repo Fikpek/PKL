@@ -34,3 +34,4 @@ let Scores = [98, 90, 70, 84]
 let [first, second, ...restOfScores] = Scores
 console.log(first)
 console.log(second)
+
