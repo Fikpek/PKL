@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        height: 5vw;
+        background-color: cadetblue;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+      }
+      nav h3 {
+        margin: 20px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: whitesmoke;
+      }
+      main {
+        background-color: aliceblue;
+        height: 35vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      table {
+        width: 50%;
+        border: 1px solid black;
+        border-radius: 7px;
+      }
+      footer {
+        background-color: cornflowerblue;
+        height: 6.7vw;
+      }
+      .inputan {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        background-color: rgb(36, 73, 142);
+        border-radius: 7px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        color: aliceblue;
+      }
+      .inputan input,
+      button {
+        margin: 7.5px;
+        padding: 0 10px 0 10px;
+      }
+      .inputan button {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
     <title>Document</title>
-</head>
-<body>
-    <h1>Belajar JS</h1>
+  </head>
+  <body>
+    <div id="container" class="container">
+      <nav>
+        <h3>Fikri Ramdani</h3>
+        <h3>Belajar Javascript</h3>
+      </nav>
+      <main>
+        <table>
+          <thead>
+            <tr>
+              <th>Index</th>
+              <th>Nama</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th><div id="indexEkskul"></div></th>
+              <th><div id="namaEkskul"></div></th>
+            </tr>
+          </tbody>
+        </table>
+        <div class="inputan">
+          <h3>Ini Input</h3>
+          <input type="number" name="" id="satu" required />
+          <input type="number" name="" id="dua" required />
+          <button onclick="sum3()">Kirim</button>
+        </div>
+      </main>
+      <footer>
+        <h3>Ini Footer</h3>
+      </footer>
+    </div>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

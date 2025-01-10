@@ -79,5 +79,34 @@ const datas =
     },
 ]
 datas.map((values, index) => {
-    console.log(values.name, values.alamat)
+    // console.log(values.name, values.alamat)
 })
+
+const namaEkskul = document.getElementById('namaEkskul')
+namaEkskul.innerHTML = Ekskul.map(item => `<p> ${item} </p>`).join(' ')
+
+const indexEkskul = document.getElementById('indexEkskul')
+indexEkskul.innerHTML = Ekskul.map((item, index) => `<p> ${index+1} </p>`).join(' ')
+
+function addName(fullName) {
+    return fullName
+}
+
+// alert(addName('Fikri'))
+
+let sum3 = () => {
+
+    let angka1 = parseInt(document.getElementById('satu').value) || 0
+    let angka2 = parseInt(document.getElementById('dua').value) || 0
+
+    if(isNaN(angka1) && isNaN(angka2)){
+        alert('Salah kocak')
+    }else{
+        Number(angka1)
+        Number(angka2)
+        
+        let hasil = angka1 + angka2
+        console.log(hasil);
+    }   
+}
+sum3()
